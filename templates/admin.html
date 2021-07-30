@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <title>Admin Page</title>
+
+<style>
+.navbar-nav a {
+	font-family: poppins;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.navbar-light .navbar-brand {
+	color: #fff;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+	color: #fff;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: #fff;
+}
+.navbar-nav {
+	text-align: center;
+}
+.nav-link {
+	padding: .2rem 1rem;
+}
+.nav-link.active, .nav-link:focus {
+	color: #fff;
+}
+.navbar-toggler {
+	padding: 1px 5px;
+	font-size: 18px;
+	line-height: 0.3;
+	background: grey;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+	color: #fff;
+}
+.w-100 {
+	height: 100vh;
+}
+@media only screen and (max-width: 767px) {
+	.navbar-nav.ml-auto {
+		background: rgba(0, 0, 0, 0);
+	}
+	.navbar-nav a {
+		font-size: 14px;
+		font-weight: normal;
+	}
+}
+
+</style>
+</head>
+
+<body style="background-image: url(https://wallpapercave.com/wp/wp6669274.jpg);">
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="/ehome">E-Polling</a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link navbar-light" href="/ehome" >Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/about">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/register">Register</a>
+					</li>
+          	<li class="nav-item">
+						<a class="nav-link" href="/login">Login</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6" style="margin: 0 auto;">
+
+        <div class="form_container" style="border: none;padding: 40px 50px;align-items: center; margin:8rem auto;">
+          <form action="/admin_login" method="Post">
+            <h1 style="text-align: center;color: white;	font-family: poppins;">Admin Login</h1>
+            <div class="row">
+              <div class="col-md-6" style="margin: 2rem auto;">
+                <div class="form-group">
+                  <label for="username" class="form-label" style="color: white;">UserName</label>
+                  <input type="text" class="form-control" id="text"
+                    style="background: none; color: white;border: none;border-bottom: 2px solid;" name="UserName"
+                    value="" placeholder="UserName">
+                </div>
+                <div class="form-group" >
+                  <label for="Password" class="form-label" style="color: white;margin: 1rem auto;">Password</label>
+                  <input type="text" class="form-control" id="text"
+                    style="background:none;color: white;border: none; border-bottom: 2px solid;" name="Password"
+                    value="" placeholder="Password">
+                </div>
+
+                <div class="row" style="margin: 3rem auto;">
+                  <div class="col-6">
+                    <input type="submit" class="btn btn-primary" value="submit" style="display: block;margin: 0 auto; background: none">
+
+                  </div>
+                  <div class="col-6">
+                    <input type="reset" class="btn btn-danger" value="reset" style="display: block;margin: 0 auto; background: none">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6" style="margin: 2rem auto 0 auto;">
+        <footer class="fixed-bottom navbar-light" style="background: black;
+            color: gray;
+            text-align: center;">
+          <p>Thanks For Using Our Application</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
